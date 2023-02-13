@@ -77,13 +77,11 @@ def detectArea(data):
         sort_surfaces = [sorted(surface) for surface in surfaces]
         if len(surface_nodes) >= 3 and sorted(surface_nodes) not in sort_surfaces:
             surfaces.append(surface_nodes)
-            name_status = False
+            surface_name = None
             for idx, named_surface in enumerate(named_surfaces):
                 if sorted(surface_nodes) == sorted(named_surface):
-                    surface_names.append(named_surface_names[idx])
-                    name_status = True
-            if name_status == False:
-                surface_names.append(None)
+                    surface_name = named_surface_names[idx]
+            surface_names.append(None)
         surface_nodes = []
         # surface_segments = []
         # surface_nodes_copy = []
