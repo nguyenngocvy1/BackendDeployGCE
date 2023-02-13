@@ -82,7 +82,6 @@ def detectArea(data):
                 if sorted(surface_nodes) == sorted(named_surface):
                     surface_names.append(named_surface_names[idx])
                     name_status = True
-                    break
             if name_status == False:
                 surface_names.append(None)
         surface_nodes = []
