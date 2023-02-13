@@ -81,7 +81,7 @@ def detectArea(data):
             for idx, named_surface in enumerate(named_surfaces):
                 if sorted(surface_nodes) == sorted(named_surface):
                     surface_name = named_surface_names[idx]
-            surface_names.append(None)
+            surface_names.append(surface_name)
         surface_nodes = []
         # surface_segments = []
         # surface_nodes_copy = []
