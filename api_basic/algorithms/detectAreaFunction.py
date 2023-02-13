@@ -4,7 +4,6 @@ from scipy.spatial import cKDTree
 
 
 def detectArea(data):
-    print("input data: ", data)
     # =============== GET DATA ============================
     raw_node_coords = data['node_coords']
     segments = data['segments']
@@ -83,6 +82,7 @@ def detectArea(data):
                 if sorted(surface_nodes) == sorted(named_surface):
                     surface_names.append(named_surface_names[idx])
                     name_status = True
+                    break
             if name_status == False:
                 surface_names.append(None)
         surface_nodes = []
@@ -91,5 +91,4 @@ def detectArea(data):
     
     data['surfaces'] = surfaces
     data['surface_names'] = surface_names
-    print("output data: ",data)
     return data
