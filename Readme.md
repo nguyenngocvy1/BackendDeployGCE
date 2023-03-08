@@ -20,4 +20,4 @@ How to start project
       python manage.py runserver
 => Server will run in localhost:8000
 
-api: http://127.0.0.1:8000/v1/article/
+api: http://127.0.0.1:8000/v1/detectArea/
